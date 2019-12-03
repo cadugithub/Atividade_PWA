@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>FirsrCheckPoint</title>
+<style>
+    body{
+        font-family: sans-serif;
+    }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    margin-bottom: 20px;
+}
+label{
+    padding: 10px 0 10px 0;
+    color:  rgb(137, 70, 177);
+    text-align: right;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(137, 70, 177);
+    border-radius: 5px;
+    color:teal;
+    font-weight: bold;
+}
+input#sub{
+    width: auto;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(137, 70, 177);
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+
+</style>
+</head>
+
+<body>
+    <form action="/test" method="POST">
+        <div id="subSection">
+            <label for="contact">Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div id="subSection">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required>
+        </div>
+        <input type="submit" id="sub">
+    </form>
+</body>
+</html>
